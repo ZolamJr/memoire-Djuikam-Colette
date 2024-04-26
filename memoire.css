@@ -1,0 +1,276 @@
+.l1{
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.l2{
+    padding-top: 60px;
+    width: 100%;
+    height: 410px;
+}
+body {
+    user-select: none;
+}
+
+
+.l2 img {
+    display: block; /* Afficher toutes les images */
+    width: 40%; 
+    height:375px;
+    position:absolute;
+    top: 30%; /* Placez l'élément à 50% de la hauteur du conteneur parent */
+    left: 30%; /* Placez l'élément à 50% de la largeur du conteneur parent */
+    border-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    align-items: center;
+}
+.l2 img:hover {
+    transform: scale(1.1);
+}
+
+.l1 img {
+    position:absolute;
+    top: 12%; /* Placez l'élément à 50% de la hauteur du conteneur parent */
+    left: 50%; /* Placez l'élément à 50% de la largeur du conteneur parent */
+    transform: translate(-50%, -50%); /* Déplacez l'élément de moitié de sa propre largeur et hauteur */
+    border-radius: 5%;
+    
+}
+
+.l3 {
+    height: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.bio {
+    text-align: center;
+    font-family: Algerian;
+    width: 30%;
+    vertical-align: middle; /* Centre verticalement */
+    line-height: 40px; /* Ajustement de la hauteur de ligne */
+}
+.fam {
+    text-align: center;
+    font-family: Algerian;
+    width: 30%;
+    vertical-align: middle; /* Centre verticalement */
+    line-height: 40px; /* Ajustement de la hauteur de ligne */
+}
+.gal {
+    text-align: center;
+    font-family: Algerian;
+    width: 30%;
+    vertical-align: middle; /* Centre verticalement */
+    line-height: 40px; /* Ajustement de la hauteur de ligne */
+}
+.bio a:hover{
+    color:rgb(232, 10, 155);
+}
+.fam a:hover{
+    color:rgb(12, 233, 245);
+}
+.gal a:hover{
+    color:rgb(20, 245, 12);
+}
+table {
+    text-align: center;
+    width: 100%;
+}
+.bio:hover {
+    background-color: pink; /* Changement de couleur de fond au survol de la cellule "Biographie" */
+}
+.fam:hover {
+    background-color: rgb(174, 218, 219); /* Changement de couleur de fond au survol de la cellule "Biographie" */
+}
+.gal:hover {
+    background-color: rgb(174, 219, 182); /* Changement de couleur de fond au survol de la cellule "Biographie" */
+}
+.bio a, .fam a, .gal a {
+    text-decoration: none; /* Supprime les tirets sous les liens */
+}
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height:550px;
+    flex: 1;
+    overflow-y: auto; /* Ajout de la barre de défilement vertical */
+    padding-bottom: 100px; /* Hauteur du footer */
+}
+content img {
+    transition: transform 0.3s;
+}
+.content img:hover {
+    transform: scale(1.1);
+    border: 2px solid #d9cdcd;
+}
+
+/* Style pour masquer le contenu non sélectionné */
+.hidden {
+    display: none;
+}
+.l5 {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    word-spacing:4px ;
+    
+}
+.f1 {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0; /* Positionner le footer en bas */
+    left: 0; /* Aligner à gauche */
+    background-color: #252525;/*  Ajouter une couleur de fond */
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Alignement vertical au centre */
+    color: azure;
+}
+
+.f1 pre {
+    margin: 0; /* Pour enlever les marges par défaut */
+}
+
+/* Ajout de media queries pour différents breakpoints */
+
+@media only screen and (max-width: 600px) {
+    .l1{
+        background-color: #333;
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .l2{
+        padding-top: 60px;
+        width: 100%;
+        height: 350px;
+    }
+
+    .l2 img {
+        display: block;
+        width: 70%; 
+        height:320px;
+        position:absolute;
+        top: 30%;
+        left: 15%;
+        border-radius: 5%;
+        cursor: pointer;
+        transition: transform 0.3s;
+        align-items: center;
+    }
+    .l2 img:hover {
+        transform: scale(1.1);
+    }
+
+    .l1 img {
+        position:absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5%;
+    }
+
+    .l3 {
+        height: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .bio, .fam, .gal {
+        text-align: center;
+        font-family: Algerian;
+        width: 30%;
+        vertical-align: middle;
+        line-height: 40px;
+    }
+    .bio a:hover{
+        color:rgb(232, 10, 155);
+    }
+    .fam a:hover{
+        color:rgb(12, 233, 245);
+    }
+    .gal a:hover{
+        color:rgb(20, 245, 12);
+    }
+    table {
+        text-align: center;
+        width: 100%;
+        
+    }
+    .bio:hover {
+        background-color: pink;
+    }
+    .fam:hover {
+        background-color: rgb(174, 218, 219);
+    }
+    .gal:hover {
+        background-color: rgb(174, 219, 182);
+    }
+    .bio a, .fam a, .gal a {
+        text-decoration: none;
+    }
+    .content {
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        height:550px;
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 100px;
+    }
+    content img {
+        transition: transform 0.3s;
+    }
+    .content img:hover {
+        transform: scale(1.1);
+        border: 2px solid #d9cdcd;
+    }
+
+    .hidden {
+        display: none;
+    }
+    .l5 {
+        width: 100%;
+        height: 100px;
+        font-weight: bold;
+        word-spacing:4px ;
+    }
+    .f1 {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        color: azure;
+    }
+
+    .f1 pre {
+        margin: 0;
+    }
+}
+    
+
+
+/* Pour les écrans entre 600px et 1024px de large */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .l2 img {
+        width: 50%; /* Réduire la largeur de l'image */
+        top: 25%; /* Ajuster la position verticale */
+        left: 25%; /* Ajuster la position horizontale */
+    }
+}
+
+/* Pour les écrans supérieurs à 1024px de large */
+@media screen and (min-width: 1025px) {
+    /* Ajoutez vos ajustements en fonction des besoins pour les écrans plus larges */
+}

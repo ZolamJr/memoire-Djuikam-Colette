@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ceci est un site dédié à Grand-Mere">
+    <meta name="keywords" content="Hommage, Memoire">
+    <meta name="author" content="ZolamJr">
+    <title>*---*Memoire*---*</title>
+    <link rel="stylesheet" href="memoire.css">
+</head>
+<body>
+    <div class="l1">
+        <center>
+            <img src="logoff.png"  width="150" height="105">
+        </center>
+    </div>
+    <div class="l2">
+        <center>
+            <img id="i2" src="i2.jpg" alt="Photo de Grand-Mere">
+        </center>
+    </div>
+    <br>
+    <div class="l5">
+        <pre style="font-family:Monotype Corsiva;">
+꧁༺ FEUE DJUIKAM COLETTE ༻꧂
+
+
+◤✞ 1940 - AVRIL 09 2024 ✞◥
+        </pre>
+    </div>
+    <div class="l3">
+        <table>
+            <thead>
+                <th id="th1" class="bio"><a href="#bio.html">Biographie</a></th>
+                <th id="th2" class="fam"><a href="#family.html">Famille</a></th>
+                <th id="th3" class="gal"><a href="#galerie.html">Galerie</a></th>
+            </thead>
+        </table>
+    </div>
+        <br>
+        <div class="content">
+            <!-- Contenu dynamique -->
+        </div>
+    </div>
+    <footer class="f1">
+        <pre>
+        <br>
+            *-Hometown-*
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg> Bepanda, Douala
+        </pre>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sélection des éléments th
+            var th1 = document.getElementById("th1");
+            var th2 = document.getElementById("th2");
+            var th3 = document.getElementById("th3"); // Ajout de th3
+
+            // Sélection de la div content
+            var contentDiv = document.querySelector(".content");
+
+            // Écouteur d'événement pour th1
+            th1.addEventListener("click", function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                contentDiv.innerHTML = "<p>Madame DJUIKAM COLETTE, née aux alentours de 1940 à Pète-Bandjoun, fille éminente de Tuebou Moche et de Meku Kapche Thérèse, illustre une existence marquée par un dévouement et une persévérance sans pareils. Son enfance, rythmée par les enseignements de l'école St Charles de Pète-Bandjoun, fut empreinte d'une profonde implication au sein de l'Église Catholique, sous la bienveillance du Révérend Père Allemand Shuap, proche de son père. Initiée à la foi à l'Église Sainte Thérèse de l'Enfant Jésus de Pète-Bandjoun, elle reçut les sacrements du baptême, de la confirmation, et unit sa destinée à celle de Monsieur Boudjeka Ernest, éminent homme d'affaires, lors d'une cérémonie nuptiale religieuse.</p><p>Dès son arrivée à Douala en 1957, son cœur vibrant pour la musique la mena à rejoindre avec passion la chorale 'Ka Koungne Christo', concrétisant ainsi sa volonté de servir le Seigneur à travers les harmonies mélodieuses. Soutenue par son époux, Madame Colette s'épanouit dans l'art de la haute couture, signant des créations distinctives qui firent sa renommée à Douala. Son engagement sans faille dans l'orfèvrerie textile lui valut d'élaborer des pièces prisées au sein du distingué 'Marché Lagos', attirant ainsi des commandes de toutes provenances.</p><p>Dotée d'une générosité sans bornes, Maman Colette se distingua par son accueil chaleureux et son dévouement à l'éducation de nombreux enfants, révélant une altruisme sans égal. Femme d'action, engagée et pourvue d'une écoute attentive, elle inspira son entourage par son ardeur, sa résolution et son intrépidité. De confession fervente, elle laissa une empreinte indélébile en tant que chrétienne dévouée, contribuant à la fondation de la chorale 'Kakuongne Chrisot' et s'impliquant activement au sein de sa paroisse.</p><p>En sa qualité de mère aimante au cœur infiniment généreux et d'épouse attentionnée, son héritage perdure à travers ses enfants, petits-enfants et arrière-petits-enfants. En un hommage vibrant à sa mémoire, que son âme repose en paix.</p>";
+            });
+
+            // Écouteur d'événement pour th2
+            th2.addEventListener("click", function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                contentDiv.innerHTML = "<p><strong>ÉPOUX</strong><br>Ernest Boudjeka</p><p><strong>ENFANTS</strong><br>Mama Marie-Claire, Mama Ernestine Rose, Papa Jean-Claude, Béatrice, Mama Charlotte, Mama Agnès, Mama Florence, Viviane.</p><p><strong>PARENT</strong><br>FEUE MA'A KAPCHE THERESE ET FEU PA'A TUEBOU</p><p><strong>FRÈRES ET SŒURS</strong><br>PAPA FOKAM BLAISE, PAPA KAMGA JEAN, GUEMGNE CELINE......</p>";
+            });
+           // Écouteur d'événement pour th3
+           th3.addEventListener("click", function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                contentDiv.innerHTML = "<img id='i1' src='i1.jpeg' alt='Photo de Grand-Mere' width='40%' height='275px'><img id='i3' src='i3.jpg' alt='Photo de Grand-Mere' width='40%' height='275px'><img id='i4' src='i4.jpg' alt='Photo de Grand-Mere' width='40%' height='275px'><img id='i5' src='i5.jpg' alt='Photo de Grand-Mere' width='40%' height='275px'><img id='i6' src='i6.jpg' alt='Photo de Grand-Mere' width='40%' height='275px'>";
+            })
+
+        });
+    </script>
+</body>
+</html>
